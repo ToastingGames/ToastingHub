@@ -2,40 +2,97 @@
 <html>
 <head>
   <title>ToastHub</title>
+
   <style>
-  body {
-    background-color: black;
-    color: white;
-    text-align: left;
-    font-family: "Arial Black", Arial, sans-serif;
-  }
-  
-  /* center only the header */
-  h1 {
-    text-align: center;
-    margin: 1rem 0;
-  }
-  
-  /* links */
-  a {
-    color: DarkBlue;
-    font-size: 16px;
-  }
+    body {
+      background-color: black;
+      color: #00ffcc;
+      font-family: "Courier New", monospace;
+      text-align: center;
+    }
+
+    /* main container */
+    .container {
+      width: 700px;
+      margin: auto;
+      border: 3px solid #00ffcc;
+      padding: 15px;
+      background-color: #111;
+      box-shadow: 0 0 15px #00ffcc;
+    }
+
+    h1 {
+      font-size: 28px;
+      color: #ff00ff;
+      text-shadow: 0 0 10px #ff00ff;
+    }
+
+    h2 {
+      color: #00ffff;
+      margin-top: 20px;
+    }
+
+    /* GIF banner */
+    .gif-banner {
+      display: block;
+      margin: 15px auto;
+      width: 100%;
+      max-width: 500px;
+      border: 2px dashed #ff00ff;
+      padding: 5px;
+      background-color: black;
+    }
+
+    /* links */
+    a {
+      color: #ffff00;
+      text-decoration: none;
+    }
+
+    a:hover {
+      color: #ff0000;
+      text-decoration: underline;
+    }
+
+    /* retro blinking effect */
+    .blink {
+      animation: blink 1s steps(2, start) infinite;
+    }
+
+    @keyframes blink {
+      to {
+        visibility: hidden;
+      }
+    }
+
+    /* footer */
+    .footer {
+      margin-top: 20px;
+      font-size: 12px;
+      color: gray;
+    }
+
   </style>
 </head>
+
 <body>
-  <h1>Welcome to the ToastHub! A retro style website for all my stuff.</h1>
-  <h2>All the links to my socials.</h2>
-<p>
-  <br>
-  YouTube: <a href="https://www.youtube.com/@ToastingGames">ToastingGames</a>
-  <br>
-  GitHub: <a href="https://github.com/ToastingGames">ToastingGames</a>
-  <br>
-  Itch: <a href="https://itch.io/profile/toastinggames">ToastingGames</a>
-  <br>
-  Reddit: <a href="https://www.reddit.com/user/ToastingGames/">u/ToastingGames</a>
-</p>
+
+  <div class="container">
+
+    <h1 class="blink">Welcome to ToastHub!</h1>
+
+    <img src="https://tenor.com/mfTk1x4zZGY.gif" alt="Retro animation" class="gif-banner">
+
+    <h2>All the links to my socials</h2>
+
+    <p>
+      YouTube: <a href="https://www.youtube.com/@ToastingGames">ToastingGames</a><br>
+      GitHub: <a href="https://github.com/ToastingGames">ToastingGames</a><br>
+      Itch: <a href="https://itch.io/profile/toastinggames">ToastingGames</a><br>
+      Reddit: <a href="https://www.reddit.com/user/ToastingGames/">u/ToastingGames</a>
+    </p>
+
+  </div>
 
 </body>
 </html>
